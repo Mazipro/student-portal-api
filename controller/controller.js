@@ -26,6 +26,8 @@ const getAllStudents = async (request, respond) => {
   }
 }
 
+// Update student profile
+
 const updateStudent = async (request, respond) => {
   try {
     const student = await Student.findById(request.params.id);
