@@ -15,9 +15,13 @@ const studentSchema = new mongoose.Schema(
             type: String,
             required: true,
             unique: true
-        }
-    },
-    { timestamps: true }
+        },
+        products: [{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Product'
+        }]
+    }
 );
 
-module.exports = mongoose.model('Student', studentSchema);
+const studentModel = mongoose.model('Student', studentSchema);
+module.exports = studentModel;
