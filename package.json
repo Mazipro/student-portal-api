@@ -7,6 +7,8 @@
   "bugs": {
     "url": "https://github.com/Mazipro/student-portal-api/issues"
   },
+  "scripts  ": {"start": "node index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mazipro/student-portal-api.git"
