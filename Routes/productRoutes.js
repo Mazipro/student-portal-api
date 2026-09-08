@@ -1,8 +1,10 @@
 const express = require('express');
-const { uploadProduct, getAllOroducts} = require('../controller/productController');
-
 const router = express.Router();
-router.post('/upload', uploadProduct);
+
+// Import the controller function here:
+const { getAllProducts } = require('../controller/productController');
+
+// Your route line:
 router.get('/getall', getAllProducts);
 
 module.exports = router;
